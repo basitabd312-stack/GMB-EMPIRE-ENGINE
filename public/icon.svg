@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#0a0a0b" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF099" />
+      <stop offset="35%" stop-color="#FFD700" />
+      <stop offset="70%" stop-color="#FFA500" />
+      <stop offset="100%" stop-color="#B8860B" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background Shield/Square -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="12" />
+  
+  <!-- Outer Aura Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="16 10" opacity="0.4" />
+
+  <!-- Imperial Crown & Map Pin Combined Motif -->
+  <!-- Map Pin Base -->
+  <path d="M256 120 C190 120 138 172 138 238 C138 316 230 405 250 424 C254 427 258 427 262 424 C282 405 374 316 374 238 C374 172 322 120 256 120 Z" 
+        fill="#111113" stroke="url(#goldGrad)" stroke-width="10" filter="url(#glow)" />
+        
+  <!-- Crown inside Pin -->
+  <path d="M190 265 L210 205 L235 240 L256 185 L277 240 L302 205 L322 265 Z" 
+        fill="url(#goldGrad)" stroke="#B8860B" stroke-width="2" />
+        
+  <!-- Crown Jewels -->
+  <circle cx="256" cy="180" r="8" fill="#FFF7CC" />
+  <circle cx="210" cy="200" r="6" fill="#FFF7CC" />
+  <circle cx="302" cy="200" r="6" fill="#FFF7CC" />
+  
+  <!-- Star / 18 Badge Indicator -->
+  <text x="256" y="325" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="34" fill="url(#goldGrad)" letter-spacing="3">18X</text>
+  <text x="256" y="352" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="14" fill="#E5C158" letter-spacing="4">EMPIRE</text>
+</svg>

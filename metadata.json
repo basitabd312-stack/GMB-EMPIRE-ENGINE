@@ -1,0 +1,6 @@
+{
+  "name": "GMB Empire Engine",
+  "description": "Dominate Google My Business and Google Maps with 18 automated intelligence engines, live scanner, gap detector, power maker, and multi-language welcome assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
